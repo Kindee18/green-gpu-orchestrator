@@ -15,13 +15,13 @@ module "eks" {
       max_size     = 3
       desired_size = 1
 
-      instance_types = ["g4dn.xlarge"] # Cost-effective GPU instance
+      instance_types = ["g4dn.xlarge"]  # Cost-effective GPU instance
       ami_type       = "AL2_x86_64_GPU" # NVIDIA optimized AMI
 
       labels = {
         role = "gpu-worker"
       }
-      
+
       taints = [{
         key    = "nvidia.com/gpu"
         value  = "true"
