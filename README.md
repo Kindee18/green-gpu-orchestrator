@@ -1,7 +1,5 @@
 # Green-GPU Orchestrator: Sustainable Fractional GPU Infrastructure
 
-[![Terraform CI/CD](https://github.com/kindson/green-gpu-orchestrator/actions/workflows/terraform.yml/badge.svg)](https://github.com/kindson/green-gpu-orchestrator/actions)
-
 ## 🎯 Purpose
 This project is a production-grade implementation of a **Sustainable GPU Cloud** architecture, specifically designed to solve the "GPU Availability & Efficiency Gap" faced by AI hyperscalers like **Nscale**.
 
