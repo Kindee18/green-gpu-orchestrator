@@ -1,0 +1,18 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: gpu-inference-scaler
+  namespace: default
+spec:
+  scaleTargetRef:
+    name: gpu-inference-deployment
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  triggers:
+  - type: prometheus
+    metadata:
+      # Scaling based on simulated queue depth
+      serverAddress: http://prometheus-server.monitoring.svc.cluster.local:80
+      metricName: inference_request_queue_length
+      threshold: '5'
+      query: sum(inference_request_queue_length)
