@@ -60,4 +60,3 @@ The stack includes a mock "Green Score" monitoring layer. In a production Nscale
 ---
 **Author:** Kindson Nathaniel Egbule  
 **Role:** Junior Cloud Engineer  
-**Portfolio:** [GitHub Link]
