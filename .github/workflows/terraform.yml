@@ -14,7 +14,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./green-gpu-orchestrator/terraform
+        working-directory: ./terraform
 
     steps:
     - name: Checkout
